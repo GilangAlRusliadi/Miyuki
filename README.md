@@ -39,7 +39,7 @@ Miyuki GUI (Gradio Version) adalah antarmuka berbasis web untuk mengunduh video 
    ```bash
    python app.py
    ```
-   Akses UI di browser melalui `http://localhost:7860`
+   Akses UI di browser melalui `http://localhost:7860` atau `http://127.0.0.1:7860`
 
 2. **Unduh Video**:
    - Masukkan URL video pada input yang tersedia.
@@ -52,4 +52,4 @@ Proyek ini berlisensi MIT - lihat file [LICENSE](LICENSE) untuk detail lebih lan
 
 ## Acknowledgements
 
-Terinspirasi dari [Miyuki-WebGUI](https://github.com/cailurus/Miyuki-WebGUI) dan menggunakan modul **Miyuki** dari proyek [MissAV-Downloader](https://github.com/MiyukiQAQ/MissAV-Downloader/).
+Terinspirasi dari [Miyuki-WebGUI](https://github.com/cailurus/Miyuki-WebGUI) dan menggunakan modul [**Miyuki**](https://github.com/GilangAlRusliadi/Miyuki/raw/refs/heads/main/miyuki-0.7.7.tar.gz) dari proyek [MissAV-Downloader](https://github.com/MiyukiQAQ/MissAV-Downloader/).

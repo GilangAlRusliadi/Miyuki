@@ -1,5 +1,7 @@
 import subprocess
 import gradio as gr
+import webbrowser
+import threading
 from process import *
 from extra import *
 
@@ -11,6 +13,9 @@ except ImportError:
 
 # Load existing queue
 download_queue = load_queue()
+
+def open_browser():
+    webbrowser.open("http://127.0.0.1:7860")
 
 def add_to_queue(video_url, quality):
     if not video_url.startswith("http"):
@@ -55,10 +60,10 @@ with gr.Blocks() as app:
         video_url = gr.Textbox(label="Video URL")
         quality = gr.Dropdown(["360", "480", "720"], label="Quality", value="360")
         add_button = gr.Button("Add to Queue")
+        start_button = gr.Button("Start Download")
     
     add_button.click(add_to_queue, inputs=[video_url, quality], outputs=None)
     
-    start_button = gr.Button("Start Download")
     start_button.click(start_download, outputs=None)
     
     check_button = gr.Button("Check Status")
@@ -68,4 +73,5 @@ with gr.Blocks() as app:
     view_button = gr.Button("View Queue")
     view_button.click(view_queue, outputs=queue_list)
 
+threading.Thread(target=open_browser).start()
 app.launch()

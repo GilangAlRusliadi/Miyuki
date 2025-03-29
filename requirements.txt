@@ -1,3 +1,2 @@
-streamlit
+gradio
 pandas
-# miyuki
