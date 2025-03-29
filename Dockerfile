@@ -1,12 +1,21 @@
 FROM python:3.10-slim
+
+# Install dependencies
 RUN apt-get update && apt-get install -y \
     ffmpeg \
     && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
 WORKDIR /app
+
+# Copy project files
 COPY . .
 
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 8501
+# Expose port for Gradio
+EXPOSE 7860
 
-CMD ["streamlit", "run", "main.py"]
+# Run Gradio app
+CMD ["python", "app.py"]
