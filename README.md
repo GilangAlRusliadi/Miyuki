@@ -52,4 +52,4 @@ Proyek ini berlisensi MIT - lihat file [LICENSE](LICENSE) untuk detail lebih lan
 
 ## Acknowledgements
 
-Terinspirasi dari [Miyuki-WebGUI](https://github.com/cailurus/Miyuki-WebGUI) dan menggunakan modul [**Miyuki**](https://github.com/GilangAlRusliadi/Miyuki/raw/refs/heads/main/miyuki-0.7.7.tar.gz) dari proyek [MissAV-Downloader](https://github.com/MiyukiQAQ/MissAV-Downloader/).
+Terinspirasi dari [Miyuki-WebGUI](https://github.com/cailurus/Miyuki-WebGUI) dan menggunakan modul [**Miyuki**](https://github.com/GilangAlRusliadi/Miyuki/raw/refs/heads/main/miyuki-0.7.7-py3-none-any.whl) dari proyek [MissAV-Downloader](https://github.com/MiyukiQAQ/MissAV-Downloader/).

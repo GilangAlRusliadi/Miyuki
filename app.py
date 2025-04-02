@@ -4,12 +4,7 @@ import webbrowser
 import threading
 from process import *
 from extra import *
-
-try:
-    import miyuki
-    print("Miyuki is already installed.")
-except ImportError:
-    subprocess(f"pip install miyuki-0.7.7.tar.gz", shell=True)
+install_miyuki()
 
 # Load existing queue
 download_queue = load_queue()

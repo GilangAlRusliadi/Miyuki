@@ -98,3 +98,10 @@ def run_command(command):
     except Exception as e:
         return search(command)
     
+def install_miyuki():
+    try:
+        import miyuki
+        return "Miyuki is already installed."
+    except ImportError:
+        command = "pip install miyuki-0.7.7-py3-none-any.whl"
+        return run_command(command)
